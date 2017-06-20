@@ -17,6 +17,19 @@ div.addEventListener('mouseover', function() {
 
   div.addEventListener('mouseleave', function() {
   div.innerHTML="";
+
+
+
+div.addEventListener('click',function(){
+    div.style.backgroundColor = randomColor();
+    function randomColor() {
+    var randomRed = Math.floor(Math.random() * 350);
+    var randomGreen = Math.floor(Math.random() * 350);
+    var randomBlue = Math.floor(Math.random() * 350);
+    var randomColor = "rgb("+randomRed+","+randomGreen+","+randomBlue+")";
+    return randomColor
+        }
+      })
     });
   });
 });
