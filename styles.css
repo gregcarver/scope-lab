@@ -2,4 +2,14 @@ div{
     background-color: black;
     height:100px;
     width:100px;
+    margin:1em;
+    color:white;
+    text-align: center;
+}
+
+
+div.id{
+      position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
