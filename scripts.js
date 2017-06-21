@@ -2,7 +2,9 @@
 var button= document.createElement('button');
 var text=document.createTextNode('Click');
 button.appendChild(text);
-document.body.appendChild(button);
+var container=document.createElement('container');
+container.appendChild(button);
+document.body.appendChild(container);
 
 var numBoxes=0;
 
@@ -32,7 +34,7 @@ div.style.backgroundColor = randomColor();
 });
 
 div.addEventListener('dblclick',function(){
-  if(div.id%2==0){
+  if(div.id%2==0 ){
       div.nextSibling.remove();    
         } 
   else if (div.id%2==1){
