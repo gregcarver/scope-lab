@@ -30,6 +30,25 @@ div.addEventListener('click',function(){
     return randomColor
         }
       })
+
+/*function removeElement() {
+  var elem = document.getElementById(div.id);
+  elem.parentNode.removeChild(elem);
+};*/
+  
+
+div.addEventListener('dblclick',function(){
+
+  if(div.id%2==0){
+      div.nextElementSibling.remove();
+        }
+  else if (div.id%2==1){
+      div.previousElementSibling.remove();
+        }
+  else{
+        alert('Element does not exist');
+        }
+      })
     });
   });
 });
