@@ -34,10 +34,10 @@ div.style.backgroundColor = randomColor();
 });
 
 div.addEventListener('dblclick',function(){
-  if(div.id%2==0 ){
+  if(div.id%2==0 && div.nextSibling!=null){
       div.nextSibling.remove();    
         } 
-  else if (div.id%2==1){
+  else if (div.id%2==1 && div.previousSibling!=button){
       div.previousSibling.remove();
         }
   else{
